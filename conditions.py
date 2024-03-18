@@ -9,3 +9,14 @@
 # - Prompts a user to enter their age.
 # - Uses a conditional statement to check if the age is greater than or equal to 18.
 # - Prints "You are eligible to vote" if true, otherwise "You are not eligible to vote."
+
+#Accept an input from the user and convert it to an integer
+age = input("\nEnter Your Age: \n")
+if age == "":
+    print("\nPlease enter an integer. Input cannot be blank.\n")
+
+elif int(age) >= 18:
+    print("\nYou are eligible to vote.\n")
+
+else:
+    print("\nYou are not eligible to vote.\n")
